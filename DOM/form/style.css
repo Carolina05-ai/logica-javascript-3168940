@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: #222;
+  padding: 2rem;
+  transition: background-color 0.5s ease;
+}
+
+section {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: #444;
+}
+
+input[type="text"],
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  outline-offset: 2px;
+  outline-color: transparent;
+  transition: outline-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+p {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+label[for="gatos"],
+label[for="mapaches"],
+label[for="perros"] {
+  margin-right: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button.button,
+#cerrarSesion {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button.button:hover,
+#cerrarSesion:hover {
+  background-color: #574fd6;
+}
+
+#resultado {
+  text-align: center;
+  display: none;
+}
+
+#resultado img {
+  max-width: 200px;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
